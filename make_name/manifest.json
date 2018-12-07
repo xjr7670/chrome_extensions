@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "ChangeName",
+    "version": "0.0.1",
+    "description": "生成topic名字和备注",
+    "icons": {
+        "64": "images/icon64.png",
+        "128": "images/icon128.png"
+    },
+    "background": {
+        "scripts": [
+            "js/jquery.min.js",
+            "js/background.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_icon": "images/icon64.png",
+        "default_title": "change topic name",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://10.252.31.204:8080/*"],
+            "js": ["js/jquery.min.js", "js/content-script.js"]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "http://10.252.31.204:8080/",
+        "storage"
+    ]
+}
