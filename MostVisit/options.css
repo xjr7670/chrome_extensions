@@ -1,0 +1,76 @@
+body {
+    margin: 5;
+}
+
+#tables {
+    width: 610px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    display: inline-block;
+    width: 300px;
+}
+
+/* 图表 */
+#charts {
+    width: 1000px;
+    height: 810px;
+    display: inline-block;
+}
+
+/* 柱状图 */
+#barChart {
+    width: 1000px;
+    height: 400px;
+}
+
+/* 饼图 */
+#pieChart {
+    width: 1000px;
+    height: 400px;
+}
+
+#domainTable {
+    vertical-align: top;
+}
+
+
+/* 底部边框 */
+table th, table tr {
+    border-bottom: 1px solid black;
+}
+
+/* 表格第1列右缩进1个像素 */
+table tr td {
+    text-indent: 1px;
+}
+
+/* 第二列居中 */
+table tr td:nth-child(2) {
+    text-align: center;
+}
+
+/* 偶数行加底纹 */
+table tr:nth-child(2n) {
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+/* 鼠标悬挂变色 */
+table tr:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+.footer {
+    text-align: right;
+    margin-top: 10px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}

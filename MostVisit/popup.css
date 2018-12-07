@@ -1,0 +1,48 @@
+body {
+    margin: 5;
+}
+
+#main {
+    width: 200px;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table tr td:first-child, table tr th:first-child {
+    width: 150px;
+}
+
+table tr td:nth-child(2), table tr th:nth-child(2) {
+    width: 50px;
+}
+
+/* 底部边框 */
+table th, table tr {
+    border-bottom: 1px solid black;
+}
+
+/* 第二列居中 */
+table tr td:nth-child(2) {
+    text-align: center;
+}
+
+/* 偶数行加底纹 */
+table tr:nth-child(2n) {
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+/* 鼠标悬挂变色 */
+table tr:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+.footer {
+    text-align: right;
+    margin-top: 10px;
+}
+

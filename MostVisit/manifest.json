@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "mostVisit",
+    "version": "0.0.1",
+    "description": "统计过去一段时间内访问过的网站",
+    "icons": {
+        "64": "images/icon64.png",
+        "128": "images/icon128.png"
+    },
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+    },
+    "options_page": "options.html",
+    "browser_action": {
+        "default_icon": "images/icon64.png",
+        "default_title": "show most visit site",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "webNavigation",
+        "tabs",
+        "storage"
+    ]
+
+}
