@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "HelpMeClick4PDD",
+    "version": "0.2",
+    "description": "将无访问无收藏无销量的拼多多商品在管理页面中进行自动勾选，方便下架管理",
+    "icons": {
+        "64": "images/icon64.png",
+        "128": "images/icon128.png"
+    },
+    "options_page": "options.html",
+    "browser_action": {
+        "default_icon": "images/icon64.png",
+        "default_title": "PDD Click Help",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://mms.pinduoduo.com/goods/goods_list", "https://mms.pinduoduo.com/sycm/goods_effect/detail"],
+            "css": [],
+            "js": ["js/jquery.min.js", "js/popup.js"]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "./js/background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "storage",
+        "activeTab"
+    ]
+}
