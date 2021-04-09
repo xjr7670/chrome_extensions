@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "HelpMeClick",
+    "version": "0.1",
+    "description": "将无访客的拼多多商品在管理页面中进行自动勾选，方便下架管理",
+    "icons": {
+        "64": "images/icon64.png",
+        "128": "images/icon128.png"
+    },
+    "options_page": "options.html",
+    "browser_action": {
+        "default_icon": "images/icon64.png",
+        "default_title": "Click Help Test",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://www.xjr7670.com/Item*.html"],
+            "css": [],
+            "js": ["js/jquery.min.js", "js/popup.js"]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "activeTab"
+    ]
+}
